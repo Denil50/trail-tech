@@ -3,7 +3,7 @@
 body{
     background-color: black;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.2;
     color: #BFBFBF;
     font-family: 'Poppins';
     font-size: 20px;
@@ -31,12 +31,18 @@ a{
     display: flex;
     gap: 50px;
 }
+.menu__list-item__link{
+    transition: .5s;
+    &:hover {
+        color: #fff;
+    }
+}
 
 .slider__text{
     height: 50px;
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0;
     overflow: hidden;
 }
 
@@ -74,5 +80,38 @@ a{
     }
 }
 
+.title-top{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(255, 255, 255, .1),rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
 
+.images{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    &__avatar{
+        margin: 0 auto;
+    }    
+}
+
+.contacts__link{
+    position: absolute;
+    top: 550px;
+    word-wrap: break-word;
+    color: #fff;
+    &-email{
+        left: 0;
+    }
+    &-adres{
+        right: 0;
+    }
+}
 @import 'media';
+
