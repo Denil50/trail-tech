@@ -8,6 +8,12 @@ body{
     font-family: 'Poppins';
     font-size: 20px;
 }
+.text{
+    color: #D9D9D9;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 70px;
+}
 a{
     color: inherit;
 }
@@ -18,7 +24,7 @@ a{
 .container{
     max-width: 1528px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 100px;
 }
 
 .header__top{
@@ -140,6 +146,57 @@ a{
         right: -100px;
         transition: all 0.1s ease;
     }
+}
+.about{
+    margin-bottom: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.about__text{
+    display: flex;
+    white-space: nowrap;
+    width: 200%;
+    overflow: hidden;
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    animation: about__text 20s linear infinite;
+    &-name{
+        color: #383838;
+        margin: 0 70px;
+        width: 100%;
+    }
+    &-about{
+        width: 100%;
+    }
+}
+.works{
+    width: 100%;
+    overflow: hidden;
+}
+@keyframes about__text {
+    0% {
+        transform: translateX(0%) 
+    }
+    100% {
+        transform: translateX(-50%) 
+    }
+}
+.works__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 200px;
+}
+.work__item{
+    max-width: 700px;
+}
+.work__item-text{
+    color: #FFF;
+    font-size: 35px;
+    margin: 40px 0;
+    white-space: pre-wrap;
 }
 
 @import 'media';
