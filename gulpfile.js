@@ -68,6 +68,7 @@ function scripts(){
     return src([
         // Добавить все подлючаемые JS файлы
         // 'node_modules/',
+        'node_modules/jquery/dist/jquery.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))

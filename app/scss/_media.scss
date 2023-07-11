@@ -18,6 +18,16 @@
         top: 50%;
         font-size: 15px;
     }
+    .works__item{
+        height: 530px;
+        &-line{
+            gap: 30px;
+        }
+    }
+    .works__item-line__img-m{
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -146,6 +156,17 @@
             &-adres{
                 width: 55px;
             }
+    }
+    .works__item{
+        height: 315px;
+        margin: 100px 0;
+        &-line{
+            gap: 15px;
+        }
+    }
+    .works__item-line__img-m{
+        width: 150px;
+        height: 150px;
     }
 } 
 
