@@ -8,6 +8,17 @@
     }
 }
 
+@media (max-width: 1210px) {
+    .lore__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .lore__item-text{
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 1024px) {
     .slider__text{
         margin: 60px 0 10px;
@@ -39,6 +50,26 @@
     }
     .work__item{
         width: 100%;
+    }
+    .experience__item{
+        display: block;
+    }
+    .experience__item-left{
+        max-width: 100%;
+        border-radius: 65px;
+        &__year{
+            font-size: 18px;
+        }
+        &__place__experience{
+            font-size: 40px;
+        }
+        &__job__title{
+            font-size: 20px;
+        }
+    }
+    .experience__text{
+        max-width: 100%;
+        font-size: 22px;
     }
 }
 
@@ -90,11 +121,14 @@
     }
     .contacts__link{
         &-email{
-            width: 120px;
+            width: 130px;
         }
         &-adres{
-            width: 100px;
+            width: 65px;
         }
+    }
+    .education__item{
+        max-width: 100%;
     }
 }
 
@@ -193,6 +227,41 @@
     }
     .work__item-text{
         font-size: 24px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+    .experience{
+        margin-bottom: 100px;
+    }
+    .experience__item-left{
+        border-radius: 65px;
+        &__year{
+            font-size: 12px;
+        }
+        &__place__experience{
+            font-size: 22px;
+        }
+        &__job__title{
+            font-size: 14px;
+        }
+    }
+    .experience__text{
+        font-size: 16px;
+    }
+
+    .education{
+        margin-bottom: 100px;
+    }
+    .education__item{
+        padding: 55px 40px 60px 50px;
+    }
+    .lore{
+        margin-bottom: 100px;
+    }
+    .lore__item-text{
+        font-size: 22px;
     }
 } 
 

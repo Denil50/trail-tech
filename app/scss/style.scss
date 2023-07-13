@@ -5,7 +5,7 @@ body{
     font-weight: 400;
     line-height: 1.2;
     color: #BFBFBF;
-    font-family: 'Poppins';
+    font-family: 'Source Code Pro', monospace;
     font-size: 20px;
 }
 .text{
@@ -24,7 +24,7 @@ a{
 .container{
     max-width: 1528px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 .header__top{
@@ -91,6 +91,7 @@ a{
 }
 
 .title-top{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 100px;
     font-weight: 700;
@@ -197,6 +198,94 @@ a{
     font-size: 35px;
     margin: 40px 0;
     white-space: pre-wrap;
+}
+
+.title{
+    color: #FFF;
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.experience{
+    margin-bottom: 200px;
+}
+.experience__item{
+    display: flex;
+    max-width: 100%;
+    border-radius: 70px;
+    border: 3px solid #9F80FF;
+}
+.experience__item-left{
+    border-radius: 70px;
+    background: linear-gradient(270deg, #9F80FF 0%, rgba(159, 128, 255, 0.00) 100%);
+    padding: 45px;
+    max-width: 55%;
+    &__year{
+        color: rgba(255, 255, 255, .4);
+    }
+    &__place__experience{
+        color: #FFF;
+        font-size: 45px;
+        margin: 8px 0;
+    }
+    &__job__title{
+        color: #D9D9D9;
+        font-size: 25px;
+    }       
+}
+.experience__item-right{
+    max-width: 590px;
+    padding: 45px;
+    color: #E6E6E6;
+}
+
+.education{
+    margin-bottom: 200px;
+}
+.education__box{
+    display: flex;
+    justify-content: center;
+}
+.education__item{
+    border-radius: 70px;
+    border: 3px solid #FFAA80;
+    background: linear-gradient(270deg, #FFAA80 0%, rgba(255, 170, 128, 0.00) 100%);
+    padding: 55px 200px 70px 50px;
+}
+
+.lore{
+    margin-bottom: 200px;
+}
+.lore__wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.lore__items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    &-column__3{
+        justify-content: end;
+    }
+}
+.lore__item{
+    max-width: 100%;
+    padding: 20px 0;
+    padding-left: 22px;
+    border-radius: 95.884px;
+    box-shadow: 0px 0px 19.176708221435547px 0px #9F80FF inset;
+    &-text{
+        color: #FFF;
+        font-size: 18px;
+    }
+    &-column__2{
+        box-shadow: 0px 0px 19.176708221435547px 0px #FFAA80 inset;
+    }
+    &-column__3{
+        box-shadow: inset 0 0 20px #80d2fe;
+    }
 }
 
 @import 'media';
