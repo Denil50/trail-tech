@@ -71,6 +71,16 @@
         max-width: 100%;
         font-size: 22px;
     }
+    .footer__wrapper{
+        flex-direction: column;
+        gap: 75px;
+    }
+    .footer__menu{
+        text-align: center;
+    }
+    .footer__addess{
+        display: none;
+    }
 }
 
 @media (max-width: 850px) {
@@ -130,8 +140,28 @@
     .education__item{
         max-width: 100%;
     }
+    .footer__wrapper{
+        padding: 0;
+    }
+    .footer__email-link{
+        gap: 0;
+    }
+    .footer__left{
+        width: 100%;
+    }    
 }
 
+@media (max-width: 740px) {
+    .email{
+        font-size: 18px;
+    }
+    .sub{
+        font-size: 15px;
+    }
+    .footer__email-link{
+        padding: 20px 30px;
+    }
+}
 
 @media (max-width: 600px) {
     .container{
@@ -263,10 +293,28 @@
     .lore__item-text{
         font-size: 22px;
     }
+    .awards{
+        margin-bottom: 100px;
+    }
+    .awards__items{
+        flex-direction: column;
+    }
+    .footer__title{
+        font-size: 45px;
+    }
 } 
 
 @media (max-width: 450px) {
     .slider__text{
         margin: 60px 0 25px;
+    }
+    .email{
+        font-size: 14px;
+    }
+    .sub{
+        font-size: 12px;
+    }
+    .footer__email-link{
+        padding: 15px 10px;
     }
 }

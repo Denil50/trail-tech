@@ -34,10 +34,10 @@ if (animLines.length > 0) {
             }
 
             if((pageYOffset > animLineOffset - animLinePoint) && pageYOffset < (animLineOffset + animLineHeight)){
-                animLine.classList.add('works__item-line__img-m-active');
+                animLine.classList.add('_active');
             } else {
                 if(!animLine.classList.contains('anim-no-hide')){
-                    animLine.classList.remove('works__item-line__img-m-active');
+                    animLine.classList.remove('_active');
                 }
             }
         }
@@ -49,4 +49,7 @@ if (animLines.length > 0) {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
     }
+    setTimeout(() => {
+        animOnScroll();
+    }, 300);
 }
