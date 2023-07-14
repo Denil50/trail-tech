@@ -20,17 +20,17 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header__top animLines anim-no-hide">
                 <a href="#" class="logo">
                     <img src="images/logo.svg" alt="logo" class="logo__img">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item__link">Проекты</a>
+                            <a href="#works" class="menu__list-item__link">Проекты</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item__link">Контакты</a>
+                            <a href="#footer" class="menu__list-item__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,15 +40,15 @@
     <main class="main">
         <section class="top-wrapper">
             <div class="container">
-                <div class="slider__text">
+                <div class="slider__text animLines anim-no-hide">
                     <div class="slider__text-item">Стартегический программист</div>
                     <div class="slider__text-item">Продуманный иноватор</div>
                     <div class="slider__text-item">Волшебник веб-кода</div>
                     <div class="slider__text-item">Архитектор веб-ландшафта</div>
                 </div>
-                <h1 class="title-top">DАНИЛА СОМЕНКОV</h1>
-                <div class="images">
-                    <img src="images/avatar.png" alt="avatar" class="images__avatar">
+                <h1 class="title-top animLines anim-no-hide">DАНИЛА СОМЕНКОV</h1>
+                <div class="images animLines anim-no-hide">
+                    <img src="images/avatar.png" alt="avatar" class="images__avatar animLines anim-no-hide">
                     <a href="mailto:danil.somenkov@yandex.ru" class="contacts__link contacts__link-email">danil.somenkov@yandex.ru</a>
                     <a href="https://yandex.ru/maps/-/CHHDBcQ" class="contacts__link contacts__link-adres">Россия, Воронеж</a>
                 </div>
@@ -75,9 +75,6 @@
                 <img src="images/work__1-min.png" alt="картинки работ" class="works__item-line__img-m">
                 <img src="images/work__1-min.png" alt="картинки работ" class="works__item-line__img-m">
             </div>
-            <!-- <div class="works__item-line">
-                <img src="images/work__1-min.png" alt="картинки работ" class="works__item-line__img-m animLines anim-no-hide">
-            </div> -->
         </div>
         <section class="about">
             <div class="about__text">
@@ -98,7 +95,7 @@
                 </p>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
             <div class="about__text">
                 <h3 class="about__text-about">Работы</h3>
                 <h3 class="about__text-name">Нашумевшие</h3>
@@ -215,7 +212,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__wrapper">
+            <div class="footer__wrapper" id="footer">
                 <div class="footer__left">
                     <h4 class="footer__title">Контакты</h4>
                     <a href="mailto:danil.somenkov@yandex.ru" class="footer__email-link">
@@ -236,15 +233,3 @@
     <script src="js/main.min.js"></script>
 </body>
 </html>
-
-
-<!-- .works__item-line__img-m{
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-
-    &.works__item-line__img-m-active{
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-} -->

@@ -107,7 +107,7 @@ function cleandist(){
 function building() {
     return src([
         'app/css/style.min.css',
-        'app/images/',
+        'app/images/favicons/*.*',
         'app/images/*.*',
         'app/fonts/*.*',
         'app/js/main.min.js',

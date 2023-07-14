@@ -1,5 +1,7 @@
 @import 'reset';
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     font-weight: 400;
@@ -31,6 +33,13 @@ a{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all .8s ease;
+    &._active{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
 
 .menu__list{
@@ -54,6 +63,12 @@ a{
     text-align: center;
     margin: 10px 0;
     overflow: hidden;
+    opacity: 0;
+    transition: all 2s ease 0s;
+    &._active{
+        opacity: 1;
+        transition: all 2s ease .4s;
+    }
 }
 
 .slider__text-item{
@@ -100,6 +115,13 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
+    transform: translate(0, 10%);
+    opacity: 0;
+    transition: all .8s cubic-bezier(0.24, 0.21, 0.52, 1.38);
+    &._active{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
 
 .images{
@@ -107,8 +129,22 @@ a{
     position: relative;
     width: 100%;
     margin-top: 20px;
+    transform: translate(0, 30%);
+        opacity: 0;
+        transition: all .8s cubic-bezier(0.25, 0.1, 0.28, 1.46);
+    &._active{
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
     &__avatar{
         margin: 0 auto;
+        transform: rotateY(70deg);
+        opacity: 0;
+        transition: all .8s cubic-bezier(0.25, 0.1, 0.28, 1.46);
+         &._active{
+        transform: rotateY(0deg);
+        opacity: 1;
+        }
     }    
 }
 
