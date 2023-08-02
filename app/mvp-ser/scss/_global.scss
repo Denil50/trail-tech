@@ -1,0 +1,32 @@
+body{
+    @extend %roboto-300;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(33, 38, 41, 0.6);
+    background-color: #E9E9E9;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.smart-basket__min{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    &-icon{
+        display: none;
+    }
+    &-count{
+        position: absolute;
+        top: 5px;
+        right: 90%;
+    }
+}

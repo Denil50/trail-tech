@@ -1,0 +1,141 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import '../module/_header/_header';
+@import '../module/_footer/_footer';
+
+.details-top{
+    display: flex;
+    margin-bottom: 80px;
+    &__link{
+        margin-right: 25px;
+    }
+    &__title{
+        font-size: 28px;
+        color: $default;
+        @extend %roboto-700;
+    }
+}
+.detail-box{
+    display: flex;
+    max-width: 1050px;
+    background-color: $default;
+    border-radius: $br-def;
+    box-shadow: 34px 39px 9px -16px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    &__img{
+        max-width: 475px;
+        object-fit: cover;
+        border-radius: 40px 0 0 3px;
+    }
+    &__content{
+        margin: 43px 18px 72px 50px;
+        color: #fff;
+    }
+    &__content-title{
+        font-size: 31.1538px;
+        line-height: 37px;
+        @extend %roboto-700;
+        margin-bottom: 22px;
+    }
+    &__content-price{
+        font-size: 28px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        @extend %roboto-700;
+        margin-bottom: 17px;
+    }
+    &__content-text{
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 25px;
+    }
+    &__content-titleForm{
+        font-size: 15.5769px;
+        line-height: 19px;
+        @extend %roboto-700;
+        margin-bottom: 16px;
+    }
+    &__content-label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 23.3654px 23.3654px 23.3654px 2.33654px;
+        margin-bottom: 10px;
+        span{
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            margin-right: 30px;
+        }
+    }
+    &__content-input{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+        &:checked + .detail-box__content-checkbox{
+            background-color: $accent; 
+            background-image: url('../images/icon/check.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+    &__content-checkbox{
+        width: 21px;
+        height: 21px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 0.778846px solid rgba(255, 255, 255, 0.15);
+        position: absolute;
+        margin-left: -21px;
+    }
+    &__content-btn{
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        margin-top: 40px;
+        background: #212629;
+        box-shadow: 0.778846px 0.778846px 3.11538px rgba(0, 0, 0, 0.5), -0.778846px -0.778846px 4.67308px rgba(255, 255, 255, 0.05), -3.89423px -3.89423px 15.5769px rgba(255, 255, 255, 0.1), 3.89423px 3.89423px 15.5769px rgba(0, 0, 0, 0.8);
+        border-radius: 77.1058px;
+        border: none;
+        font-size: 14.0192px;
+        line-height: 16px;
+        color: $accent;
+        @extend %roboto-700;
+        cursor: pointer;
+    }
+}
+.product__size{
+    display: flex;
+}
+.product__size-element{
+    padding: 8px 10px;
+    margin-left: 10px;
+    background: #212629;
+    box-shadow: .778846px .778846px 3.11538px rgba(0,0,0,.5),-0.778846px -0.778846px 4.67308px rgba(255,255,255,.05),-3.89423px -3.89423px 15.5769px rgba(255,255,255,.1),3.89423px 3.89423px 15.5769px rgba(0,0,0,.8);
+    border-radius: 77.1058px;
+    border: none;
+    font-size: 14.0192px;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    &.product__size-element_active{
+        box-shadow: inset -1px -1px 3px rgba(119, 119, 119, 0.8),inset -6px -6px 5px rgba(37, 37, 37, 0.536),inset 1px 1px 3px rgba(0, 0, 0, 0.536),inset 6px 6px 5px rgba(55, 55, 55, 0.358);
+    }
+}
+.product__price{
+    display: inline-block;
+    line-height: 18px;
+    font-size: 22px;
+    @extend %roboto-700;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 25px;
+}
+
+@import 'media';

@@ -1,0 +1,156 @@
+.header-inner{
+    margin-top: 35px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    &__btns{
+        display: flex;
+        a{
+            color: #FFFFFF;
+        }
+    }
+    &__btn-item{
+        @extend %roboto-700;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #25D366;
+        border-radius: 30px;
+        width: 160px;
+        height: 40px;
+        margin-left: 25px;
+        padding-left: 35px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 20px;
+            background-image: url('../images/icon/watsapp.svg');
+            left: 25px;
+        }
+        &VK{
+            background-color: #2594D3;
+            padding-left: 25px;
+            &::before{
+                width: 26px;
+                height: 17px;
+                background-image: url('../images/icon/vk.svg');
+                left: 45px;
+                top: 10px;
+            }
+        }
+    }
+    &__btn-profileInner{
+        position: relative;
+    }
+    &__btn-profile{
+        width: 40px;
+        height: 40px;
+        background-color: #E9E9E9;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+        border-radius: 50%;
+        margin-left: 50px;
+        cursor: pointer;
+        background-image: url('../images/icon/profil.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__btn-profileMenu{
+        z-index: -1;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        opacity: 0;
+        transition: all .3s;
+        &.header-inner__btn-profileMenu--active{
+            opacity: 1;
+            z-index: 10;
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+            background-color: #E9E9E9;
+            border-radius: $br-def;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05), 60px 60px 80px rgba(0, 0, 0, 0.35);
+            padding-top: 50px;
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     width: 24px;
+            //     height: 24px;
+            //     background-image: url('../images/icon/close.svg');
+            //     top: 15px;
+            //     right: 35px;
+            // }
+        }
+    }
+}
+.profileMenu{
+    &__item{
+        a{
+            color: $default;
+        }
+        max-width: 360px;
+        margin: 0 20px;
+        border-top: 1px solid #fff;
+        position: relative;
+    }
+    &__item-text{
+        display: block;
+        padding-left: 41px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        &--bask::before {
+                content: '';
+                position: absolute;
+                width: 19px;
+                height: 18px;
+                background-image: url('../images/icon/order.svg');
+                left: 5px;
+                top: 20px;
+        }
+        &--wa::before {
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 18px;
+            background-image: url('../images/icon/watsapp-min.svg');
+            left: 5px;
+            top: 20px;
+        }
+        &--vk::before {
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 13px;
+            background-image: url('../images/icon/vk-min.svg');
+            left: 5px;
+            top: 24px;
+        }
+    }
+}
+
+@media (max-width: 690px){
+    .header-inner__btn-item{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .header-inner__btn-profileMenu.header-inner__btn-profileMenu--active{
+        width: 350px;
+
+    }
+}
+
+@media (max-width: 430px){
+    .header-inner{
+        &__btn-profileMenu{
+            right: 0px;
+            &.header-inner__btn-profileMenu--active{
+                width: 290px;
+            }
+        }
+    }
+}

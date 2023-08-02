@@ -222,12 +222,24 @@ a{
 }
 .works__wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
     margin-bottom: 200px;
 }
 .work__item{
-    max-width: 700px;
+    max-width: 660px;
+}
+.work__item-link{
+    overflow: hidden;
+    display: block;
+    border-radius: 20px;
+}
+.work__item-img{
+    transition: all .6s ease;
+    &:hover{
+    transform: scale(1.03);
+    }
 }
 .work__item-text{
     color: #FFF;
